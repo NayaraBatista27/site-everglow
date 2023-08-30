@@ -1,0 +1,41 @@
+.canal-youtube {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding-top: 50px;
+  text-decoration: overline;
+}
+
+.sub-dança-sincronia {
+  color: white;
+  font-size: 30px;
+}
+
+.mv {
+  width: 40%;
+  padding: 10px;
+  margin: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.33);
+  transition: 1s;
+}
+
+.mv:hover {
+  transform: scale(0.8);
+  opacity: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  display: none;
+  font-size: 30px;
+  padding: 0px;
+}
+
+.title:hover {
+  display: block;
+}

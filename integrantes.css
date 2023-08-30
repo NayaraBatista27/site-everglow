@@ -1,0 +1,37 @@
+article {
+  height: 280px;
+  padding-bottom: 80px;
+  display: flex;
+}
+
+.nos-apresentando {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  padding-top: 50px;
+  text-decoration: overline;
+}
+
+.foto1 {
+  margin-left: 30px;
+  border-radius: 5%;
+  box-shadow: 2px 11px 20px 0px rgba(255, 255, 255, 0.482);
+}
+
+.foto2 {
+  margin-right: 30px;
+  border-radius: 5%;
+  box-shadow: 2px 11px 20px 0px rgba(0, 0, 0, 0.482);
+}
+
+.descricao {
+  padding: 10px;
+  margin: 30px;
+  text-align: center;
+}
+
+.maknae {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+}
