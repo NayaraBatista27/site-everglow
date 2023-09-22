@@ -121,11 +121,11 @@ h3 {
 }
 
 .titulo-album {
+  /* TITULO DOS ALBUMS */
   transition: 0.1s;
   padding: 20px;
   color: white;
   font-size: 18px;
-  /* TITULO DOS ALBUMS */
 }
 
 .player {
@@ -238,21 +238,37 @@ h3 {
 
   .video-slay {
     /* VIDEO SLAY */
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .discografia {
+    margin-top: 60px;
+    text-decoration: overline;
+    font-size: 30px;
   }
 
   .players-spotify {
     /* SECTION */
-  }
-
-  .discografia {
+    display: flex;
+    justify-content: center;
   }
 
   .titulo-album {
     /* TITULO DOS ALBUMS */
+    color: white;
+    font-size: 18px;
+    padding: 0;
   }
 
   .player {
     /* IFRAME SPOTIFY */
+    transition: 0.1s;
+    width: 100%;
+    display: flex;
+    box-shadow: 5px 6px 20px 0px rgba(0, 0, 0, 0.534);
   }
 
   .titulo-album:hover {
