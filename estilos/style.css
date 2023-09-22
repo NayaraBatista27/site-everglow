@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap");
 
+/*
+verde: #617763e5
+creme-fundo: #f3dfcc
+creme-menu: #b69c8c
+*/
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -155,4 +161,112 @@ h3 {
 .logo-rodape {
   margin-left: 495px;
   width: 70px;
+}
+
+/**************  CELULAR  ****************/
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  body {
+    /* TODO CORPO DA PAGINA */
+  }
+
+  header.cabecalho {
+    /* PARTE DA CAPA E LOGO */
+  }
+
+  img.logo {
+    /* SOMENTE O LOGO TRASPARENTE */
+    display: none;
+  }
+
+  div.capa {
+    /* SOMENTE A FOTO DE CAPA */
+    background-image: url(../imagens/everglow-capa.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color: black;
+    width: 100vw;
+    height: 41vh;
+  }
+
+  nav.menu {
+    /* LINHA QUE DEMARCA O TAMANHO DOS LINKS DO MENU */
+    padding: 5px;
+    height: 35px;
+    text-align: center;
+  }
+
+  nav > a {
+    /* LINKS DO MENU */
+    font-size: 1em;
+    margin: auto;
+  }
+
+  nav a:hover {
+    /* AÇÃO DEPOIS DE PASSAR O MEUSE NOS LINKS DE MENU */
+  }
+
+  main.container {
+    /* MAIN - ESPAÇO DO CONTEUDO DO CENTRO */
+    width: 100%;
+  }
+
+  h2,
+  h3 {
+    /* SUBTITULOS DOS DOIS PRIMEIROS BLOCOS DE TEXTO */
+    font-size: 1.3em;
+  }
+
+  h3 {
+    /* TITULO DA DISCOGRAFIA */
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  a {
+    /* LINKS QUE VAO PARA PAGINAS EXTERNAS */
+  }
+
+  abbr {
+    /* LEGENDAS DAS ABREVIAÇÕES DOS NOMES */
+  }
+
+  .video-slay {
+    /* VIDEO SLAY */
+  }
+
+  .players-spotify {
+    /* SECTION */
+  }
+
+  .discografia {
+  }
+
+  .titulo-album {
+    /* TITULO DOS ALBUMS */
+  }
+
+  .player {
+    /* IFRAME SPOTIFY */
+  }
+
+  .titulo-album:hover {
+  }
+
+  .redes-sociais {
+  }
+
+  .redes-sociais > a {
+  }
+
+  .rodape {
+  }
+
+  .logo-rodape {
+  }
 }
