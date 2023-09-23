@@ -1,262 +1,215 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap");
-
 /*
 verde: #617763e5
 creme-fundo: #f3dfcc
 creme-menu: #b69c8c
 */
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-body {
-  /* TODO CORPO DA PAGINA */
-  font-family: "Playfair Display", serif;
-  background-color: #f3dfcc;
-}
-
-.cabecalho {
-  /* PARTE DA CAPA E LOGO */
-  background-color: black;
-}
-
-.logo {
-  /* SOMENTE O LOGO TRASPARENTE */
-  width: 90px;
-  padding-bottom: 100px;
-  margin: 50px;
-}
-
-.capa {
-  /* SOMENTE A FOTO DE CAPA */
-  width: 75%;
-}
-
-.menu {
-  /* LINHA QUE DEMARCA O TAMANHO DOS LINKS DO MENU */
-  background-color: #b69c8c;
-  padding: 10px;
-}
-
-nav a {
-  /* LINKS DO MENU */
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 10px;
-  margin-left: 13%;
-}
-
-nav a:hover {
-  /* AÇÃO DEPOIS DE PASSAR O MEUSE NOS LINKS DE MENU */
-  color: white;
-  background-color: rgba(0, 0, 0, 0.466);
-}
-
-.container {
-  /* MAIN - ESPAÇO DO CONTEUDO DO CENTRO */
-  background-color: #617763e5;
-  width: 80%;
-  margin: auto;
-  box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.331);
-}
-
-h2 {
-  /* SUBTITULOS DOS DOIS PRIMEIROS BLOCOS DE TEXTO */
-  text-align: center;
-  color: white;
-  font-size: 40px;
-  padding-left: 30px;
-  padding-top: 30px;
-}
-
-a {
-  /* LINKS QUE VAO PARA PAGINAS EXTERNAS */
-  color: white;
-}
-
-p {
-  /* PARAGRAFOS DOS BLOCOS */
-  text-align: center;
-
-  color: white;
-  font-size: 18px;
-  padding-left: 30px;
-  padding-top: 10px;
-}
-
-abbr {
-  /* LEGENDAS DAS ABREVIAÇÕES DOS NOMES */
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-h3 {
-  /* TITULO DA DISCOGRAFIA */
-  text-align: center;
-  color: white;
-  font-size: 30px;
-  padding: 30px;
-}
-
-.video-slay {
-  /* VIDEO SLAY */
-  padding-left: 290px;
-}
-
-.players-spotify {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* SECTION */
-}
-
-.discografia {
-  margin-top: 60px;
-  text-decoration: overline;
-  font-size: 40px;
-}
-
-.titulo-album {
-  /* TITULO DOS ALBUMS */
-  transition: 0.1s;
-  padding: 20px;
-  color: white;
-  font-size: 18px;
-}
-
-.player {
-  /* IFRAME SPOTIFY */
-  width: 100%;
-  display: flex;
-  box-shadow: 5px 6px 20px 0px rgba(0, 0, 0, 0.534);
-}
-
-.titulo-album:hover {
-  /* transform: scale(1.1); */
-}
-
-.redes-sociais {
-  background-color: #b69c8c;
-}
-
-.redes-sociais > a {
-  text-decoration: none;
-}
-
-.rodape {
-  background-color: black;
-  height: 90px;
-}
-
-.logo-rodape {
-}
-
 /**************  CELULAR  ****************/
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   body {
     /* TODO CORPO DA PAGINA */
-    width: 100vw;
     overflow-x: hidden;
+    font-family: "Playfair Display", serif;
+    background-color: #f3dfcc;
   }
 
-  header.cabecalho {
+  .cabecalho {
     /* PARTE DA CAPA E LOGO */
+    width: 100vw;
+    background-color: black;
   }
 
-  img.logo {
-    /* SOMENTE O LOGO TRASPARENTE */
-    display: none;
-  }
-
-  div.capa {
+  .capa {
     /* SOMENTE A FOTO DE CAPA */
     background-image: url(../imagens/everglow-capa.jpeg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom;
-    background-color: black;
-    width: 100vw;
-    height: 41vh;
+    background-position: center;
+    width: 100%;
+    height: 34vh;
   }
 
-  nav.menu {
+  .menu {
     /* LINHA QUE DEMARCA O TAMANHO DOS LINKS DO MENU */
-    padding: 5px;
-    height: 35px;
-    text-align: center;
+    background-color: #b69c8c;
+    padding-bottom: 5px;
   }
 
   nav > a {
     /* LINKS DO MENU */
-    font-size: 1em;
-    margin: auto;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    padding: 1px;
+    margin: 2px 15px 2px 15px;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.504);
+    border-radius: 20px;
   }
 
-  nav a:hover {
-    /* AÇÃO DEPOIS DE PASSAR O MEUSE NOS LINKS DE MENU */
-  }
-
-  main.container {
+  .container {
     /* MAIN - ESPAÇO DO CONTEUDO DO CENTRO */
-    width: 100%;
+    background-color: #617763e5;
+    margin: auto;
+    box-shadow: inset 0px 4px 20px 0px rgba(0, 0, 0, 0.331);
+    padding: 15px;
   }
 
   h2,
   h3 {
     /* SUBTITULOS DOS DOIS PRIMEIROS BLOCOS DE TEXTO */
-    font-size: 1.3em;
-  }
-
-  h3 {
-    /* TITULO DA DISCOGRAFIA */
+    text-align: center;
+    color: white;
+    font-size: 17px;
   }
 
   p {
-    padding: 0;
-    margin: 0;
-    font-size: 1em;
+    /* PARAGRAFOS DOS BLOCOS */
     text-align: center;
+    color: white;
+    font-size: 12px;
+    padding: 20px;
   }
 
   a {
     /* LINKS QUE VAO PARA PAGINAS EXTERNAS */
+    color: white;
   }
 
   abbr {
     /* LEGENDAS DAS ABREVIAÇÕES DOS NOMES */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+}
+
+/*-----------------  teste  ------------------*/
+@media screen and (max-width: 120px) {
+  body {
+    /* TODO CORPO DA PAGINA */
+    font-family: "Playfair Display", serif;
+    background-color: #f3dfcc;
+  }
+
+  .cabecalho {
+    /* PARTE DA CAPA E LOGO */
+    background-color: black;
+  }
+
+  .capa {
+    /* SOMENTE A FOTO DE CAPA */
+    background-image: url(../imagens/everglow-capa.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: black;
+    width: 100%;
+    height: 40vh;
+  }
+
+  .menu {
+    /* LINHA QUE DEMARCA O TAMANHO DOS LINKS DO MENU */
+    background-color: #b69c8c;
+    padding: 10px;
+  }
+
+  nav a {
+    /* LINKS DO MENU */
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    margin-left: 13%;
+  }
+
+  nav a:hover {
+    /* AÇÃO DEPOIS DE PASSAR O MEUSE NOS LINKS DE MENU */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.466);
+  }
+
+  .container {
+    /* MAIN - ESPAÇO DO CONTEUDO DO CENTRO */
+    background-color: #617763e5;
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 20px 20px 5px rgba(0, 0, 0, 0.331);
+  }
+
+  h2 {
+    /* SUBTITULOS DOS DOIS PRIMEIROS BLOCOS DE TEXTO */
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  a {
+    /* LINKS QUE VAO PARA PAGINAS EXTERNAS */
+    color: white;
+  }
+
+  p {
+    /* PARAGRAFOS DOS BLOCOS */
+    text-align: center;
+
+    color: white;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+
+  abbr {
+    /* LEGENDAS DAS ABREVIAÇÕES DOS NOMES */
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  h3 {
+    /* TITULO DA DISCOGRAFIA */
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 30px;
   }
 
   .video-slay {
     /* VIDEO SLAY */
-    padding: 0px;
+    padding-left: 290px;
+  }
+
+  .players-spotify {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* SECTION */
   }
 
   .discografia {
     margin-top: 60px;
     text-decoration: overline;
-    font-size: 30px;
-  }
-
-  .players-spotify {
-    /* SECTION */
-    display: flex;
-    justify-content: center;
+    font-size: 40px;
   }
 
   .titulo-album {
     /* TITULO DOS ALBUMS */
+    transition: 0.1s;
+    padding: 20px;
     color: white;
     font-size: 18px;
-
-    margin-top: 20px;
   }
 
   .player {
@@ -266,32 +219,23 @@ h3 {
     box-shadow: 5px 6px 20px 0px rgba(0, 0, 0, 0.534);
   }
 
-  .player:hover {
-    transform: scale(1.1);
-    transition: 0.1s;
+  .titulo-album:hover {
+    /* transform: scale(1.1); */
   }
 
   .redes-sociais {
+    background-color: #b69c8c;
   }
 
   .redes-sociais > a {
+    text-decoration: none;
   }
 
   .rodape {
     background-color: black;
-    height: 65px;
+    height: 90px;
   }
 
   .logo-rodape {
-    background-color: blue;
-    margin-left: 495px;
-    width: 0px;
-    color: white;
-  }
-
-  .texto-rodape {
-    text-align: center;
-    color: white;
-    font-size: 15px;
   }
 }

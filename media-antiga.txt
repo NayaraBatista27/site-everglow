@@ -1,0 +1,141 @@
+/**************  CELULAR  ****************/
+@media screen and (max-width: 600px) {
+  body {
+    /* TODO CORPO DA PAGINA */
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  header.cabecalho {
+    /* PARTE DA CAPA E LOGO */
+    width: 100%;
+  }
+
+  img.logo {
+    /* SOMENTE O LOGO TRASPARENTE */
+    display: none;
+  }
+
+  div.capa {
+    /* SOMENTE A FOTO DE CAPA */
+    background-image: url(../imagens/everglow-capa.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-color: black;
+    width: 100%;
+    height: 41vh;
+  }
+
+  nav.menu {
+    /* LINHA QUE DEMARCA O TAMANHO DOS LINKS DO MENU */
+    width: 100%;
+    padding: 5px;
+    height: 35px;
+    text-align: center;
+  }
+
+  nav > a {
+    /* LINKS DO MENU */
+    font-size: 1em;
+    margin: auto;
+  }
+
+  nav a:hover {
+    /* AÇÃO DEPOIS DE PASSAR O MEUSE NOS LINKS DE MENU */
+  }
+
+  main.container {
+    /* MAIN - ESPAÇO DO CONTEUDO DO CENTRO */
+    width: 100%;
+  }
+
+  h2,
+  h3 {
+    /* SUBTITULOS DOS DOIS PRIMEIROS BLOCOS DE TEXTO */
+    font-size: 1.3em;
+  }
+
+  h3 {
+    /* TITULO DA DISCOGRAFIA */
+  }
+
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  a {
+    /* LINKS QUE VAO PARA PAGINAS EXTERNAS */
+  }
+
+  abbr {
+    /* LEGENDAS DAS ABREVIAÇÕES DOS NOMES */
+  }
+
+  .video-slay {
+    /* VIDEO SLAY */
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .discografia {
+    margin-top: 60px;
+    text-decoration: overline;
+    font-size: 30px;
+  }
+
+  .players-spotify {
+    /* SECTION */
+    display: flex;
+    justify-content: center;
+  }
+
+  .titulo-album {
+    /* TITULO DOS ALBUMS */
+    color: white;
+    font-size: 18px;
+
+    margin-top: 20px;
+  }
+
+  .player {
+    /* IFRAME SPOTIFY */
+    width: 100%;
+    display: flex;
+    box-shadow: 5px 6px 20px 0px rgba(0, 0, 0, 0.534);
+  }
+
+  .player:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+
+  .redes-sociais {
+  }
+
+  .redes-sociais > a {
+  }
+
+  .rodape {
+    background-color: rgb(0, 0, 0);
+    height: 65px;
+  }
+
+  .logo-rodape {
+    margin: auto;
+    display: block;
+    width: 0px;
+    color: white;
+  }
+
+  .texto-rodape {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+  }
+}
