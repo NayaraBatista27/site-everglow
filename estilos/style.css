@@ -40,6 +40,7 @@ creme-menu: #b69c8c
     /* LINHA QUE DEMARCA O TAMANHO DOS LINKS DO MENU */
     background-color: #b69c8c;
     padding-bottom: 5px;
+    padding: 5px;
   }
 
   nav > a {
@@ -72,6 +73,10 @@ creme-menu: #b69c8c
     font-size: 17px;
   }
 
+  h3.discografia {
+    text-decoration: overline;
+  }
+
   p {
     /* PARAGRAFOS DOS BLOCOS */
     text-align: center;
@@ -90,6 +95,54 @@ creme-menu: #b69c8c
     text-decoration: none;
     color: black;
     font-weight: bold;
+  }
+
+  .video-slay {
+    /* VIDEO SLAY */
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .players-spotify {
+    /* SECTION */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .redes-sociais {
+    /*div com as imagens e os links das redes sociais*/
+    background-color: #b69c8c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .redes-sociais > a {
+    text-decoration: none;
+  }
+
+  .redes-sociais > a > img {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+  }
+
+  .rodape {
+    /*foter*/
+    display: flex;
+    background-color: black;
+    height: 40px;
+  }
+
+  .logo-rodape {
+    margin-left: 20px;
+  }
+
+  .texto-rodape {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -164,7 +217,6 @@ creme-menu: #b69c8c
   p {
     /* PARAGRAFOS DOS BLOCOS */
     text-align: center;
-
     color: white;
     font-size: 18px;
     padding-left: 30px;
@@ -188,14 +240,13 @@ creme-menu: #b69c8c
 
   .video-slay {
     /* VIDEO SLAY */
-    padding-left: 290px;
   }
 
   .players-spotify {
+    /* SECTION */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* SECTION */
   }
 
   .discografia {
@@ -232,10 +283,16 @@ creme-menu: #b69c8c
   }
 
   .rodape {
+    display: inline;
     background-color: black;
     height: 90px;
   }
 
   .logo-rodape {
+    background-color: red;
+  }
+
+  .texto-rodape {
+    background-color: blue;
   }
 }
