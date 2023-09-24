@@ -1,37 +1,96 @@
-article {
-  height: 280px;
-  padding-bottom: 80px;
-  display: flex;
+@media screen {
+  .texto-nos-apresentando {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    text-decoration: overline;
+  }
+
+  article {
+    /* height: 280px; */
+    /* padding-bottom: 80px; */
+    /* display: flex; */
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas:
+      "primeira-foto" "texto"
+      "segunda-foto" "texto";
+    row-gap: 10px;
+  }
+
+  .foto1 {
+    grid-area: "primeira-foto";
+
+    width: 90%;
+    border-radius: 5%;
+    box-shadow: 2px 11px 20px 0px rgba(255, 255, 255, 0.482);
+  }
+
+  .foto2 {
+    grid-area: "segunda-foto";
+
+    width: 90%;
+    border-radius: 5%;
+    box-shadow: 2px 11px 20px 0px rgba(0, 0, 0, 0.482);
+  }
+
+  .texto-descricao {
+    /* ja temos um estilo declarado para o <p> */
+    grid-area: "texto";
+
+    font-size: 15px;
+    padding: 0;
+    letter-spacing: 3px;
+    line-height: 15px;
+  }
+
+  .maknae {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+  }
 }
 
-.nos-apresentando {
-  text-align: center;
-  color: white;
-  font-size: 40px;
-  padding-top: 50px;
-  text-decoration: overline;
-}
+@media screen and (max-width: 10px) {
+  article {
+    height: 280px;
+    padding-bottom: 80px;
+    display: flex;
+  }
 
-.foto1 {
-  margin-left: 30px;
-  border-radius: 5%;
-  box-shadow: 2px 11px 20px 0px rgba(255, 255, 255, 0.482);
-}
+  .texto-nos-apresentando {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding-top: 50px;
+    text-decoration: overline;
+  }
 
-.foto2 {
-  margin-right: 30px;
-  border-radius: 5%;
-  box-shadow: 2px 11px 20px 0px rgba(0, 0, 0, 0.482);
-}
+  .foto1 {
+    margin-left: 30px;
+    border-radius: 5%;
+    box-shadow: 2px 11px 20px 0px rgba(255, 255, 255, 0.482);
+  }
 
-.descricao {
-  padding: 10px;
-  margin: 30px;
-  text-align: center;
-}
+  .foto2 {
+    margin-right: 30px;
+    border-radius: 5%;
+    box-shadow: 2px 11px 20px 0px rgba(0, 0, 0, 0.482);
+  }
 
-.maknae {
-  color: white;
-  text-decoration: none;
-  font-weight: normal;
+  .texto-descricao {
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+  }
+
+  .maknae {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+  }
 }
