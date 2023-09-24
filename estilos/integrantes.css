@@ -2,56 +2,48 @@
   .texto-nos-apresentando {
     text-align: center;
     color: white;
-    font-size: 17px;
+    font-size: 20px;
     text-decoration: overline;
+    padding: 20px;
   }
 
   article {
-    /* height: 280px; */
-    /* padding-bottom: 80px; */
-    /* display: flex; */
+    height: 320px;
+    padding: 40px 0px 40px 0px;
+    display: flex;
   }
 
-  .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50vh 50vh;
-    grid-template-areas:
-      "primeira-foto" "texto"
-      "segunda-foto" "texto";
-    row-gap: 10px;
-  }
-
-  .foto1 {
-    grid-area: "primeira-foto";
-
-    width: 90%;
+  .foto1,
+  .foto2 {
+    max-width: 50%;
     border-radius: 5%;
     box-shadow: 2px 11px 20px 0px rgba(255, 255, 255, 0.482);
   }
 
-  .foto2 {
-    grid-area: "segunda-foto";
-
-    width: 90%;
-    border-radius: 5%;
-    box-shadow: 2px 11px 20px 0px rgba(0, 0, 0, 0.482);
+  .sumir {
+    display: none;
   }
 
   .texto-descricao {
     /* ja temos um estilo declarado para o <p> */
-    grid-area: "texto";
-
-    font-size: 15px;
+    color: white;
+    max-height: 250px;
+    font-size: 14px;
     padding: 0;
-    letter-spacing: 3px;
-    line-height: 15px;
+    margin: 0px 20px 0px 20px;
+    max-width: 50%;
+    /* letter-spacing: 3px;
+    line-height: 15px; */
   }
 
   .maknae {
     color: white;
     text-decoration: none;
     font-weight: normal;
+  }
+
+  br {
+    display: none;
   }
 }
 
