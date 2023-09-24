@@ -1,4 +1,54 @@
-@media screen {
+@media screen and (max-width: 425px) {
+  .texto-nos-apresentando {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: overline;
+    padding: 20px;
+  }
+
+  article {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(140, 140, 140);
+    border-radius: 6px;
+    box-shadow: 2px 11px 20px 0px rgba(0, 0, 0, 0.482);
+  }
+
+  .foto1 {
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    height: 350px;
+    border-radius: 5%;
+    /* box-shadow: 2px 11px 20px 0px rgba(255, 255, 255, 0.482); */
+  }
+
+  .foto2 {
+    display: none;
+  }
+
+  .texto-descricao {
+    /* ja temos um estilo declarado para o <p> */
+    color: white;
+    font-size: 14px;
+    padding: 0;
+    margin: 0px 20px 0px 20px;
+    /* letter-spacing: 3px;
+    line-height: 15px; */
+  }
+
+  .maknae {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+  }
+
+  br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 600px) {
   .texto-nos-apresentando {
     text-align: center;
     color: white;
@@ -11,12 +61,17 @@
     height: 320px;
     padding: 40px 0px 40px 0px;
     display: flex;
+    margin-bottom: 20px;
+    border: 1px solid rgb(140, 140, 140);
+    border-radius: 6px;
+    box-shadow: 2px 11px 20px 0px rgba(0, 0, 0, 0.482);
   }
 
   .foto1,
   .foto2 {
+    margin: 10px;
     max-width: 50%;
-    border-radius: 5%;
+    border-radius: 6%;
     box-shadow: 2px 11px 20px 0px rgba(255, 255, 255, 0.482);
   }
 
@@ -30,7 +85,7 @@
     max-height: 250px;
     font-size: 14px;
     padding: 0;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 10px 0px 20px;
     max-width: 50%;
     /* letter-spacing: 3px;
     line-height: 15px; */
