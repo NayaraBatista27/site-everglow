@@ -12,7 +12,7 @@ creme-menu: #b69c8c
 }
 
 /**************  CELULAR  ****************/
-@media screen {
+@media screen and (min-width: 400px) and (max-width: 768px) {
   body {
     /* TODO CORPO DA PAGINA */
     overflow-x: hidden;
@@ -24,6 +24,10 @@ creme-menu: #b69c8c
     /* PARTE DA CAPA E LOGO */
     width: 100vw;
     background-color: black;
+  }
+
+  .container {
+    padding: 30px;
   }
 
   .capa {
@@ -66,7 +70,6 @@ creme-menu: #b69c8c
     background-color: #617763e5;
     margin: auto;
     box-shadow: inset 0px 4px 20px 0px rgba(0, 0, 0, 0.331);
-    padding: 15px;
   }
 
   h2,
@@ -74,7 +77,7 @@ creme-menu: #b69c8c
     /* SUBTITULOS DOS DOIS PRIMEIROS BLOCOS DE TEXTO */
     text-align: center;
     color: white;
-    font-size: 17px;
+    font-size: 1.5em;
   }
 
   h3.discografia {
@@ -85,7 +88,7 @@ creme-menu: #b69c8c
     /* PARAGRAFOS DOS BLOCOS */
     text-align: center;
     color: white;
-    font-size: 12px;
+    font-size: 1em;
     padding: 20px;
   }
 
@@ -150,11 +153,11 @@ creme-menu: #b69c8c
   }
 }
 
-/*************   DESKTOP   *************/
-
-@media screen and (min-width: 600px) {
+/*************   TABLET   *************/
+@media screen and (min-width: 768px) and (max-width: 992px) {
   .cabecalho {
     display: flex;
+    background-color: black;
   }
   .capa {
     /* SOMENTE A FOTO DE CAPA */
@@ -190,7 +193,7 @@ creme-menu: #b69c8c
     border: none;
     border-radius: 0;
     padding: 15px;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 0px 0px 20px;
   }
 
   .menu > a:hover {
@@ -223,7 +226,7 @@ creme-menu: #b69c8c
     text-align: center;
     color: white;
     font-size: 1.5em;
-    padding: 20px;
+    padding-bottom: 20px;
   }
 
   a {
@@ -240,12 +243,16 @@ creme-menu: #b69c8c
 
   .video-slay {
     /* VIDEO SLAY */
+    display: flex;
+    justify-content: center;
+    padding: 30px;
   }
 
   .players-spotify {
     /* SECTION */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   .titulo-album {
@@ -258,7 +265,6 @@ creme-menu: #b69c8c
   .player {
     /* IFRAME SPOTIFY */
     width: 100%;
-    display: flex;
     box-shadow: 5px 6px 20px 0px rgba(0, 0, 0, 0.534);
   }
 
@@ -310,8 +316,8 @@ creme-menu: #b69c8c
   }
 }
 
-/*----------------- teste ------------------*/
-@media screen and (max-width: 120px) {
+/**************  DESKTOP  **************/
+@media screen and (min-width: 992px) {
   body {
     /* TODO CORPO DA PAGINA */
     font-family: "Playfair Display", serif;
@@ -320,7 +326,12 @@ creme-menu: #b69c8c
 
   .cabecalho {
     /* PARTE DA CAPA E LOGO */
+    display: flex;
     background-color: black;
+  }
+
+  .container {
+    padding: 30px;
   }
 
   .capa {
@@ -331,13 +342,21 @@ creme-menu: #b69c8c
     background-position: center;
     background-color: black;
     width: 100%;
-    height: 40vh;
+    height: 63vh;
+  }
+
+  .logo-top {
+    display: inline-block;
+    width: 150px;
+    height: 160px;
+    margin: 80px 0px 80px 0px;
   }
 
   .menu {
     /* LINHA QUE DEMARCA O TAMANHO DOS LINKS DO MENU */
     background-color: #b69c8c;
-    padding: 10px;
+    text-align: center;
+    padding: 16px;
   }
 
   nav a {
@@ -346,8 +365,8 @@ creme-menu: #b69c8c
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    padding: 10px;
-    margin-left: 13%;
+    padding: 16px;
+    margin: 5px;
   }
 
   nav a:hover {
@@ -382,7 +401,7 @@ creme-menu: #b69c8c
     /* PARAGRAFOS DOS BLOCOS */
     text-align: center;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     padding-left: 30px;
     padding-top: 10px;
   }
@@ -404,13 +423,15 @@ creme-menu: #b69c8c
 
   .video-slay {
     /* VIDEO SLAY */
+    display: flex;
+    justify-content: center;
   }
 
   .players-spotify {
     /* SECTION */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .discografia {
@@ -421,42 +442,61 @@ creme-menu: #b69c8c
 
   .titulo-album {
     /* TITULO DOS ALBUMS */
-    transition: 0.1s;
     padding: 20px;
     color: white;
-    font-size: 18px;
+    margin-top: 20px;
   }
 
   .player {
     /* IFRAME SPOTIFY */
-    width: 100%;
+    width: 90%;
     display: flex;
     box-shadow: 5px 6px 20px 0px rgba(0, 0, 0, 0.534);
   }
 
-  .titulo-album:hover {
-    /* transform: scale(1.1); */
+  .player:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
   }
 
   .redes-sociais {
+    /*div com as imagens e os links das redes sociais*/
     background-color: #b69c8c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
   }
 
   .redes-sociais > a {
     text-decoration: none;
   }
 
+  .redes-sociais > a > img {
+    width: 65px;
+    height: 65px;
+    padding: 5px;
+  }
+
+  .redes-sociais > a > img:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+  }
+
   .rodape {
-    display: inline;
     background-color: black;
-    height: 90px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
   }
 
   .logo-rodape {
-    background-color: red;
+    width: 45px;
   }
 
   .texto-rodape {
-    background-color: blue;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
   }
 }
