@@ -101,6 +101,7 @@
     height: 280px;
     padding-bottom: 80px;
     display: flex;
+    padding-top: 30px;
   }
 
   .texto-nos-apresentando {
@@ -124,8 +125,8 @@
   }
 
   .texto-descricao {
-    padding: 10px;
-    margin: 30px;
+    padding: 0px 20px 0px 20px;
+    margin: 10px;
     text-align: center;
   }
 
