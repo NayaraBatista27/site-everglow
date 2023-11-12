@@ -1,3 +1,7 @@
+.clipes-ativo:visited {
+  color: white;
+}
+
 .canal-youtube {
   text-align: center;
   color: white;
@@ -8,22 +12,23 @@
 
 .sub-dança-sincronia {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .mv {
-  width: 40%;
-  padding: 10px;
-  margin: 20px;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.33);
-  transition: 1s;
+  width: 49%;
+  padding: 3px;
+  margin: 0px;
+  border-radius: 25px;
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.425);
+  opacity: 70%;
+  transition: 0.5s;
+  transform: scale(0.9);
 }
 
 .mv:hover {
-  transform: scale(0.8);
-  opacity: 50%;
+  transform: scale(1);
+  opacity: 100%;
 }
 
 a {
@@ -34,8 +39,4 @@ a {
   display: none;
   font-size: 30px;
   padding: 0px;
-}
-
-.title:hover {
-  display: block;
 }

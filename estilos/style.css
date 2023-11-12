@@ -324,6 +324,10 @@ creme-menu: #b69c8c
     background-color: #f3dfcc;
   }
 
+  .index-ativo:visited {
+    color: white;
+  }
+
   .cabecalho {
     /* PARTE DA CAPA E LOGO */
     display: flex;
@@ -481,6 +485,7 @@ creme-menu: #b69c8c
   .redes-sociais > a > img:hover {
     transform: scale(1.1);
     transition: 0.1s;
+    opacity: 80%;
   }
 
   .rodape {
@@ -491,7 +496,8 @@ creme-menu: #b69c8c
   }
 
   .logo-rodape {
-    width: 45px;
+    width: 70px;
+    height: 100%;
   }
 
   .texto-rodape {
