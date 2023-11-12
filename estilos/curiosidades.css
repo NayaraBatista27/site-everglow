@@ -1,3 +1,13 @@
 .curiosidades-ativo:visited {
   color: white;
 }
+
+.secao-fotos {
+  width: 100%;
+}
+
+.tour {
+  width: 49%;
+  padding: 15px 2px 15px 10px;
+  border-radius: 10%;
+}
